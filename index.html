@@ -1,77 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-     <!-- A grey horizontal navbar that becomes vertical on small screens -->
-     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
-        <!-- Brand -->
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-  
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!-- A grey horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar"
+    href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+    <!-- Brand -->
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="about">
+    <div id="welcome-section" class="text-center">
+      <h1>Hey I am Mimic</h1>
+      <p>a web developer</p>
+    </div>
+  </div>
+  <div id="work">
+  <div id="projects" class="text-center">
+    <h1>These are some of my projects</h1>
+    <div class="container text-center mt-4">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card" style="width:300px; height: 350px;">
+            <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+              alt="Card image">
+            <div class="card-body">
+              <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                <h4 class="card-title project-tile">Tribute Page</h4>
+              </a>
+            </div>
+          </div>
         </div>
-      </nav>
-      <div class="container-fluid">
-       <div id="welcome-section">
-         <h1>Hey I am Mimic</h1>
-         <p> There are some projects which represents my portfolio</p>
-       </div>
-       <div id="projects">
-        <h3 class="project-tile">Tribute Page</h3>
-        <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"></a>
-  
-       </div>
-       <div></div> 
-       <div id = "projectile">
-           <h3 class id="projectile">Random Quote Machine</h3>
-           <a href ="https://codepen.io/freeCodeCamp/full/qRZeGZ"></a>
-  
-       </div>
-       <div id = "project">
-           <h3 class id="project">JavaScript Project</h3>
-           <a href = "https://codepen.io/freeCodeCamp/full/wgGVVX"></a>
-           
-       </div>
-       <div id = "Maps">
-           <h3 id="maps"> Maps</h3>
-  
-       </div>
-       <div id = "wikipedia">
-           <h3 id="wikipedia">Wikipedia Viewer</h3>
-  
-  
-  
+
+        <div class="col-md-4">
+          <div class="card" style="width:300px; height: 350px;">
+            <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+              alt="Card image">
+            <div class="card-body">
+              <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
+                <h4 class="card-title project-tile">Random Quote Machine</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width:300px; height: 350px;">
+            <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="Card image">
+            <div class="card-body">
+              <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+                <h4 class="card-title project-tile">JavaScript Project</h4>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      
-      <script  src="js/index.js"></script>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  </body>
+      </div>
+      <!-- row one ends here -->
+      <div class="container text-center mt-4">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card" style="width:300px; height: 350px;">
+              <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                alt="Card image">
+              <div class="card-body">
+                <a href="https://codepen.io/freeall cards addedCodeCamp/full/mVEJag">
+                  <h4 class="card-title project-tile">Maps</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width:300px; height: 350px;">
+              <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                alt="Card image">
+              <div class="card-body">
+                <a href="https://codepen.io/freeCodeCamp/full/wGqEga">
+                  <h4 class="card-title project-tile">Wikipedia Viewer</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width:300px; height: 350px;">
+              <img class="card-img-top img-fluid" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                alt="Card image">
+              <div class="card-body">
+                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
+                  <h4 class="card-title project-tile">Tic Tac Toes</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-4">
+        <a class="btn btn-secondary font-weight-bold" href="https://codepen.io/FreeCodeCamp/">Show All ></a>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div id="about-section" class="text-center">
+      <h1>Let's work together...</h1>
+      <p>How do you take your coffee?</p>
+      <div class="container text-center mx-auto">
+        <div class="row text-center">
+          <div class="col-12">
+            <a href="http://fb.com"><p><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</p></a>
+            <a id="profile-link" target="_blank" href="http://github.com"><p><i class="fa fa-github" aria-hidden="true"></i>
+               GitHub</p></a>
+            <a href="http://twitter.com"><p><i class="fa fa-twitter" aria-hidden="true"></i>
+               Twitter</p></a>
+            <a href="mailto:example@example.com"><p><i class="fa fa-envelope" aria-hidden="true"></i>
+               Send a mail</p></a>
+            <a href="tel:555-555-5555"><p><i class="fa fa-phone" aria-hidden="true"></i>
+               Call me</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+    
+  </footer>
+
+      <script src="js/index.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</body>
+
 </html>
